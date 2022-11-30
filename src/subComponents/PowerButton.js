@@ -1,25 +1,47 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { PowerBtn } from "../components/AllSvgs";
 
-const Power = styled.button`
+const Container = styled.div`
   position: fixed;
-  top: 2rem;
-  left: 50%;
-  transform: translate(-50%, 0);
+  display: flex;
+  gap: 20px;
+  left: 4rem;
 
-  background-color: "#FCF6F4";
+  &:hover {
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    opacity: 0.7;
+  }
+`;
+const Logo = styled.h1`
+  color: ${(props) => props.theme.text};
+  font-family: "Amita";
+  transition: transform 0.2s;
+
+  font-size: 40px;
+`;
+const Initial = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 3px solid black;
   padding: 0.3rem;
-  border-radius: 50%;
-  border: 1px solid #000;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
 `;
 function PowerButton() {
   return (
-    <Power>
-      <PowerBtn />
-    </Power>
+    <NavLink to="/">
+      <Container>
+        <Initial>
+          <h1 style={{ color: "#000" }}>KA</h1>
+        </Initial>
+        <Logo>किरिटिअर्याल</Logo>
+      </Container>
+    </NavLink>
   );
 }
 
