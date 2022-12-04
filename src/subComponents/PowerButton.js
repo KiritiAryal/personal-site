@@ -9,18 +9,17 @@ const Container = styled.div`
   left: 4rem;
 
   &:hover {
-    -ms-transform: scale(1.15);
-    -webkit-transform: scale(1.15);
-    transform: scale(1.15);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
     opacity: 0.7;
   }
 `;
 const Logo = styled.h1`
   color: ${(props) => props.theme.text};
   font-family: "Amita";
-  transition: transform 0.2s;
-
-  font-size: 40px;
+  transition: 0.2s ease;
+  font-size: 30px;
 `;
 const Initial = styled.div`
   display: flex;
@@ -28,16 +27,16 @@ const Initial = styled.div`
   align-items: center;
   border-radius: 100%;
   border: 3px solid black;
-  padding: 0.3rem;
-  width: 3rem;
-  height: 3rem;
+  padding: 0.2rem;
+  width: 2.5rem;
+  height: 2.5rem;
 `;
 function PowerButton() {
   return (
     <NavLink to="/">
       <Container>
         <Initial>
-          <h1 style={{ color: "#000" }}>KA</h1>
+          <h2 style={{ color: "#000", fontFamily: "Amita" }}>KA</h2>
         </Initial>
         <Logo>किरिटिअर्याल</Logo>
       </Container>

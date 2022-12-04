@@ -24,14 +24,30 @@ const Container = styled.div`
   padding: 2rem;
 `;
 
+const Bottom = styled.div`
+  position: fixed;
+  bottom: 0;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  height: 6vh;
+  justify-content: center;
+  align-items: center;
+`;
+
 function Main() {
   return (
     <MainContainer>
       <Container>
         <PowerButton />
-
         <Connect />
       </Container>
+      <Bottom>
+        <h3 style={{ fontWeight: 500, fontFamily: "sans-serif" }}>
+          © Kiriti Aryal 2022
+        </h3>
+      </Bottom>
     </MainContainer>
   );
 }
