@@ -1,25 +1,42 @@
-import { Route, Switch } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
-import { DarkTheme, LightTheme } from "./components/Theme";
+import { lightTheme } from "./components/Themes";
+import { AnimatePresence } from "framer-motion";
 import GlobalStyle from "./globalStyles";
+
+//Components
 import Main from "./components/Main";
-import AboutPage from "./components/AboutPage";
+
 import WorkPage from "./components/WorkPage";
-import Skills from "./components/MySkillsPage";
-import Blog from "./components/BlogPage";
+
+import SoundBar from "./subComponents/SoundBar";
 
 function App() {
+  const location = useLocation();
   return (
     <>
       <GlobalStyle />
-      <ThemeProvider theme={LightTheme}>
-        <Switch>
-          <Route exact path="/" component={Main} />
-          <Route path="/about" component={AboutPage} />
-          <Route path="/work" component={WorkPage} />
-          <Route path="/skills" component={Skills} />
-          <Route path="/blog" component={Blog} />
-        </Switch>
+
+      <ThemeProvider theme={lightTheme}>
+        <SoundBar />
+
+        {/* For framer-motion animation on page change! */}
+        {/* Changed prop from exitBefore to mode */}
+        <AnimatePresence mode="wait">
+          {/* Changed Switch to Routes */}
+
+          <Routes location={location} key={location.pathname}>
+            {/* Changed component to element */}
+
+            <Route path="/" element={<Main />} />
+
+            <Route path="/work" element={<WorkPage />} />
+
+            {/* Below is to catch all the other routes and send the user to main component,
+you can add custom 404 component or message instead of Main component*/}
+            <Route path="*" element={<Main />} />
+          </Routes>
+        </AnimatePresence>
       </ThemeProvider>
     </>
   );

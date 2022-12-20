@@ -1,13 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import { DarkTheme } from "../components/Themes";
 
 const Container = styled.div`
   position: fixed;
   display: flex;
   gap: 20px;
-  left: 4rem;
-
+  left: 2rem;
+  z-index: 3;
+  color: ${(props) =>
+    props.color === "dark" ? DarkTheme.text : DarkTheme.body};
   &:hover {
     -ms-transform: scale(1.05);
     -webkit-transform: scale(1.05);
@@ -16,27 +19,34 @@ const Container = styled.div`
   }
 `;
 const Logo = styled.h1`
-  color: ${(props) => props.theme.text};
   font-family: "Amita";
   transition: 0.2s ease;
   font-size: 30px;
+  margin-top: 10px;
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 `;
+
 const Initial = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 100%;
-  border: 3px solid black;
+  border: 3px solid
+    ${(props) => (props.color === "dark" ? DarkTheme.text : DarkTheme.body)};
   padding: 0.2rem;
   width: 2.5rem;
   height: 2.5rem;
 `;
-function PowerButton() {
+function PowerButton(props) {
   return (
     <NavLink to="/">
-      <Container>
-        <Initial>
-          <h2 style={{ color: "#000", fontFamily: "Amita" }}>KA</h2>
+      <Container color={props.theme}>
+        <Initial color={props.theme}>
+          <h2 style={{ fontFamily: "Amita" }} color={props.theme}>
+            KA
+          </h2>
         </Initial>
         <Logo>किरिटिअर्याल</Logo>
       </Container>
