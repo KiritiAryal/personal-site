@@ -5,7 +5,6 @@ import { Github } from "../components/AllSvgs";
 import { BsLinkedin } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
 import { DarkTheme } from "../components/Themes";
-import "./SocialIcons.css";
 
 const Icons = styled.div`
   display: flex;
@@ -14,8 +13,13 @@ const Icons = styled.div`
   transition: 1s ease-out;
   position: fixed;
   bottom: 0;
-  left: 2rem;
+  right: 2rem;
   z-index: 3;
+  a > :last-child:hover {
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+  }
 
   & > *:not(:last-child) {
     margin: 0.5rem 0;

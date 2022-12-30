@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import Me from "../assets/Images/profile-img.png";
+import Typewriter from "typewriter-effect";
 
 const Box = styled(motion.div)`
   position: absolute;
@@ -9,7 +10,8 @@ const Box = styled(motion.div)`
   top: 50%;
   transform: translate(-50%, -50%);
 
-  width: 55vw;
+  width: 65vw;
+  height: 55vh;
   display: flex;
   @media screen and (max-width: 600px) {
     top: 56%;
@@ -37,7 +39,7 @@ const SubBox = styled.div`
   width: 50%;
   position: relative;
   display: flex;
-
+  overflow-y: hidden;
   .pic {
     position: absolute;
     bottom: 0;
@@ -51,9 +53,9 @@ const SubBox = styled.div`
 const Text = styled.div`
   font-size: calc(1em + 1.5vw);
   color: ${(props) => props.theme.body};
-  padding: 2rem;
+  padding: 1.3rem;
   cursor: text;
-
+  word-break: break-word;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -74,25 +76,35 @@ const Intro = () => {
     >
       <SubBox>
         <Text>
-          <h3>Hi, I'm Kiriti.</h3>
+          <Typewriter
+            options={{
+              autoStart: true,
+              loop: true,
+            }}
+            onInit={(typewriter) => {
+              typewriter
+                .typeString("...aspiring Full-Stack Developer")
+                .pauseFor(500)
+                .deleteAll()
+                .start()
+                .typeString("...passionate Student")
+                .pauseFor(500)
+                .deleteAll()
+                .typeString("...looking for Full-Time Opportunities")
+                .pauseFor(500)
+                .deleteAll();
+            }}
+          />
           <h6>
-            I am an aspiring full-stack developer. I currently go to Texas Tech
-            University in Lubbock, Texas. I love riding bikes and hiking. You
-            can connect with me or check out my works.
-            <div style={{ display: "inline" }}>
-              {String.fromCodePoint("0x270C")}
-            </div>
+            I currently go to Texas Tech University in Lubbock, Texas. I
+            graduate May, 2023. I love riding motorcycles and hiking. You can
+            connect with me or check out my works
+            <p style={{ display: "inline" }}> &#x270C;</p>
           </h6>
         </Text>
       </SubBox>
       <SubBox>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 2 }}
-        >
-          <img className="pic" src={Me} alt="Profile Pic" />
-        </motion.div>
+        <img className="pic" src={Me} alt="Profile Pic" />
       </SubBox>
     </Box>
   );

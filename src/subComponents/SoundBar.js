@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import { ImHeadphones } from "react-icons/im";
-import music from "../assets/audio/u-said-it-v13-1167.mp3";
+import music from "../assets/audio/Faithful-Mission.mp3";
 
 const Box = styled.div`
   display: flex;
@@ -11,8 +11,7 @@ const Box = styled.div`
   top: 3.2rem;
   z-index: 10;
   @media screen and (max-width: 600px) {
-    left: 2.8rem;
-    top: 7rem;
+    transform: scale(0.4);
   }
 
   & > *:nth-child(1) {

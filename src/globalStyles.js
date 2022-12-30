@@ -1,23 +1,38 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
 
-*,*::before,*::after,h1,h2,h3,h4,h5,h6{
+${
+  "" /* *{
+    outline: 1px solid red !important;
+}  */
+}
+
+html.has-scroll-smooth {
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;  
+}
+
+*,*::before,*::after{
     margin: 0;
     padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 h1,h2,h3,h4,h5,h6{
-    display: inline-block;
-}
-
-
-body{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    font-family: 'Source Sans Pro',sans-serif;
 }
-
+a{
+    color: inherit;
+    text-decoration:none;
+}
 `;
 
-export default GlobalStyle;
+export default GlobalStyles;

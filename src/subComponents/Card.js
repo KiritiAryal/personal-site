@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import { Github } from "../components/AllSvgs";
 
 const Box = styled(motion.li)`
   width: 15rem;
@@ -51,7 +52,7 @@ const Footer = styled.footer`
   justify-content: space-between;
 `;
 
-const Link = styled(NavLink)`
+const Link = styled.a`
   background-color: ${(props) => props.theme.body};
   color: ${(props) => props.theme.text};
   text-decoration: none;
@@ -78,9 +79,18 @@ const Item = {
     },
   },
 };
+const Git = styled.a`
+  color: inherit;
+  text-decoration: none;
+  ${Box}:hover & {
+    & > * {
+      fill: ${(props) => props.theme.text};
+    }
+  }
+`;
 
 const Card = (props) => {
-  const { id, name, description, tags, demo } = props.data;
+  const { id, name, description, tags, demo, github } = props.data;
 
   return (
     <Box key={id} variants={Item}>
@@ -92,9 +102,12 @@ const Card = (props) => {
         })}
       </Tags>
       <Footer>
-        <Link to={{ pathname: `${demo}` }} target="_blank">
+        <Link href={demo} target="_blank">
           Visit
         </Link>
+        <Git href={github} target="_blank">
+          <Github width={30} height={30} />
+        </Git>
       </Footer>
     </Box>
   );

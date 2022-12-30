@@ -12,9 +12,9 @@ const Container = styled.div`
   color: ${(props) =>
     props.color === "dark" ? DarkTheme.text : DarkTheme.body};
   &:hover {
-    -ms-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
+    -ms-transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
     opacity: 0.7;
   }
 `;

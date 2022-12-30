@@ -1,8 +1,13 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+import "locomotive-scroll/dist/locomotive-scroll.css";
+
+import { AnimatePresence } from "framer-motion";
+import { useRef, useState, useEffect } from "react";
+import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { ThemeProvider } from "styled-components";
 import { lightTheme } from "./components/Themes";
-import { AnimatePresence } from "framer-motion";
 import GlobalStyle from "./globalStyles";
+import Loader from "./components/Loader";
+import ScrollTriggerProxy from "./components/ScrollTriggerProxy";
 
 //Components
 import Main from "./components/Main";
@@ -10,9 +15,17 @@ import Main from "./components/Main";
 import WorkPage from "./components/WorkPage";
 
 import SoundBar from "./subComponents/SoundBar";
+import About from "./components/About";
 
 function App() {
-  const location = useLocation();
+  const containerRef = useRef(null);
+  const [Loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoaded(true);
+    }, 1500);
+  }, []);
   return (
     <>
       <GlobalStyle />
@@ -20,23 +33,37 @@ function App() {
       <ThemeProvider theme={lightTheme}>
         <SoundBar />
 
-        {/* For framer-motion animation on page change! */}
-        {/* Changed prop from exitBefore to mode */}
-        <AnimatePresence mode="wait">
-          {/* Changed Switch to Routes */}
-
-          <Routes location={location} key={location.pathname}>
-            {/* Changed component to element */}
-
-            <Route path="/" element={<Main />} />
-
-            <Route path="/work" element={<WorkPage />} />
-
-            {/* Below is to catch all the other routes and send the user to main component,
-you can add custom 404 component or message instead of Main component*/}
-            <Route path="*" element={<Main />} />
-          </Routes>
-        </AnimatePresence>
+        <LocomotiveScrollProvider
+          options={{
+            smooth: true,
+            // ... all available Locomotive Scroll instance options
+            smartphone: {
+              smooth: true,
+            },
+            tablet: {
+              smooth: true,
+            },
+          }}
+          watch={
+            [
+              //..all the dependencies you want to watch to update the scroll.
+              //  Basicaly, you would want to watch page/location changes
+              //  For exemple, on Next.js you would want to watch properties like `router.asPath` (you may want to add more criterias if the instance should be update on locations with query parameters)
+            ]
+          }
+          containerRef={containerRef}
+        >
+          <AnimatePresence>{Loaded ? null : <Loader />}</AnimatePresence>
+          <main className="App" data-scroll-container ref={containerRef}>
+            <ScrollTriggerProxy />
+            <AnimatePresence>
+              {Loaded ? null : <Loader />}
+              <Main key="main" />
+              <About key="about" />
+              <WorkPage key="work" />
+            </AnimatePresence>
+          </main>
+        </LocomotiveScrollProvider>
       </ThemeProvider>
     </>
   );

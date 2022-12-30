@@ -6,6 +6,7 @@ const Text = styled.h1`
   top: ${(props) => props.top};
   left: ${(props) => props.left};
   right: ${(props) => props.right};
+  bottom: ${(props) => props.right};
   color: ${(props) => `rgba(${props.theme.textRgba},0.1)`};
   font-size: calc(5rem + 5vw);
   z-index: 0;
@@ -13,7 +14,12 @@ const Text = styled.h1`
 
 const BigTitlte = (props) => {
   return (
-    <Text top={props.top} left={props.left} right={props.right}>
+    <Text
+      bottom={props.bottom}
+      left={props.left}
+      right={props.right}
+      top={props.top}
+    >
       {props.text}
     </Text>
   );
