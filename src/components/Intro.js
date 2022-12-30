@@ -33,9 +33,11 @@ const Box = styled(motion.div)`
   background-size: 100% 2px;
   border-left: 2px solid ${(props) => props.theme.body};
   border-right: 2px solid #b0d3e9;
-  border-top: 2px solid #b0d3e9;
-  border-bottom: 2px solid #b0d3e9;
+
   z-index: 1;
+  @media screen and (max-width: 600px) {
+    border-right: 2px solid ${(props) => props.theme.text};
+  }
 `;
 
 const SubBox = styled.div`
@@ -51,6 +53,7 @@ const SubBox = styled.div`
     width: 100%;
     height: auto;
     @media screen and (max-width: 600px) {
+      padding-bottom: 20px;
       height: 400px;
     }
   }

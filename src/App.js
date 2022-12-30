@@ -3,7 +3,7 @@ import "locomotive-scroll/dist/locomotive-scroll.css";
 import { AnimatePresence } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider, styled } from "styled-components";
 import { lightTheme } from "./components/Themes";
 import GlobalStyle from "./globalStyles";
 import Loader from "./components/Loader";
