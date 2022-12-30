@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { DarkTheme } from "../components/Themes";
 
@@ -41,16 +40,14 @@ const Initial = styled.div`
 `;
 function PowerButton(props) {
   return (
-    <NavLink to="/">
-      <Container color={props.theme}>
-        <Initial color={props.theme}>
-          <h2 style={{ fontFamily: "Amita" }} color={props.theme}>
-            KA
-          </h2>
-        </Initial>
-        <Logo>किरिटिअर्याल</Logo>
-      </Container>
-    </NavLink>
+    <Container color={props.theme}>
+      <Initial color={props.theme}>
+        <h2 style={{ fontFamily: "Amita" }} color={props.theme}>
+          KA
+        </h2>
+      </Initial>
+      <Logo>किरिटिअर्याल</Logo>
+    </Container>
   );
 }
 

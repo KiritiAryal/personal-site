@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import Me from "../assets/Images/profile-img.png";
+import Me from "../assets/Images/profile-img.jpg";
 import Typewriter from "typewriter-effect";
+import "./Intro.css";
 
 const Box = styled(motion.div)`
   position: absolute;
@@ -31,7 +32,9 @@ const Box = styled(motion.div)`
   background-repeat: no-repeat;
   background-size: 100% 2px;
   border-left: 2px solid ${(props) => props.theme.body};
-  border-right: 2px solid ${(props) => props.theme.text};
+  border-right: 2px solid #b0d3e9;
+  border-top: 2px solid #b0d3e9;
+  border-bottom: 2px solid #b0d3e9;
   z-index: 1;
 `;
 
@@ -97,14 +100,14 @@ const Intro = () => {
           />
           <h6>
             I currently go to Texas Tech University in Lubbock, Texas. I
-            graduate May, 2023. I love riding motorcycles and hiking. You can
-            connect with me or check out my works
+            graduate May, 2023. I love riding motorcycles and hiking. Feel free
+            to connect with me and check out my works
             <p style={{ display: "inline" }}> &#x270C;</p>
           </h6>
         </Text>
       </SubBox>
       <SubBox>
-        <img className="pic" src={Me} alt="Profile Pic" />
+        <img className="pic" src={Me} alt="Profile Pic" height={1000} />
       </SubBox>
     </Box>
   );

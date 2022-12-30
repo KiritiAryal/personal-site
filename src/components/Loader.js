@@ -23,6 +23,9 @@ const Container = styled(motion.div)`
   background-color: black;
 
   width: 100%;
+  @media (max-width: 48em) {
+    width: 400px;
+  }
 `;
 
 const Text = styled(motion.span)`
