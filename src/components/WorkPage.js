@@ -13,13 +13,11 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 const Box = styled.div`
   background-color: rgb(15, 22, 36);
   min-height: 100vh;
-  /* width: 80vw; */
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
   display: flex;
   justify-content: flex-start;
-  /* align-items: flex-start; */
   position: relative;
 `;
 
@@ -45,7 +43,6 @@ const Main = styled(motion.ul)`
 const Item = styled(motion.div)`
   display: inline-block;
   width: 20rem;
-  /* background-color: black; */
   margin-right: 6rem;
   img {
     width: 100%;
@@ -99,9 +96,8 @@ const WorkPage = () => {
           trigger: scrollingElement,
           start: "top top",
           end: `${pinWrapWidth} bottom`,
-          scroller: ".App", //locomotive-scroll
+          scroller: ".App",
           scrub: 1,
-          // markers: true,
         },
         x: -pinWrapWidth,
 

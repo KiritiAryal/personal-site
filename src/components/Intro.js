@@ -50,6 +50,9 @@ const SubBox = styled.div`
     transform: translate(-50%, 0%);
     width: 100%;
     height: auto;
+    @media screen and (max-width: 600px) {
+      height: 400px;
+    }
   }
 `;
 
@@ -100,14 +103,14 @@ const Intro = () => {
           />
           <h6>
             I currently go to Texas Tech University in Lubbock, Texas. I
-            graduate May, 2023. I love riding motorcycles and hiking. Feel free
-            to connect with me and check out my works
+            graduate on May, 2023. I love riding motorcycles and hiking. Feel
+            free to connect with me and check out my works
             <p style={{ display: "inline" }}> &#x270C;</p>
           </h6>
         </Text>
       </SubBox>
       <SubBox>
-        <img className="pic" src={Me} alt="Profile Pic" height={1000} />
+        <img className="pic" src={Me} alt="Profile Pic" />
       </SubBox>
     </Box>
   );

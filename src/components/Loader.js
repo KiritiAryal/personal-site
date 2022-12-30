@@ -23,9 +23,6 @@ const Container = styled(motion.div)`
   background-color: black;
 
   width: 100%;
-  @media (max-width: 48em) {
-    width: 400px;
-  }
 `;
 
 const Text = styled(motion.span)`
@@ -62,7 +59,7 @@ const Loader = () => {
       >
         <img
           src={mainLogo}
-          style={{ width: "100%", height: "200px" }}
+          style={{ maxWidth: "100%", minWidth: "50%", height: "200px" }}
           alt="KiritiAryalLogo"
         />
       </motion.h2>
