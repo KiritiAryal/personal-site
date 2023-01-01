@@ -6,7 +6,7 @@ export const Work = [
       "A movie browsing website(with tons of movies from TMDB) where you can login and create your own wishlist",
     tags: ["react", "mui", "tmdb", "firebase", "vite"],
 
-    demo: "https://final-project-gamma-kohl.vercel.app/",
+    demo: "https://movies-project-gamma-kohl.vercel.app/",
     github: "https://github.com/KiritiAryal/final-project",
   },
 
