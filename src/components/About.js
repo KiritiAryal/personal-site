@@ -75,7 +75,7 @@ function About1() {
                   height={40}
                   width={45}
                 />
-                <Text>Nepalese</Text>
+                <Text>Nepali</Text>
               </Card>
               <Card>
                 <img
