@@ -11,7 +11,7 @@ const Box = styled.div`
   top: 3.2rem;
   z-index: 10;
   @media screen and (max-width: 600px) {
-    transform: scale(0.4);
+    transform: scale(0.8);
   }
 
   & > *:nth-child(1) {

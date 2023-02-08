@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Resume from "../assets/Images/KiritiAryalCV.pdf";
-import ResumeIcon from "../assets/Images/cv.png";
 
 import "./About.css";
 const Card = styled.div`
@@ -15,7 +13,7 @@ const Card = styled.div`
   gap: 20px;
   padding-left: 20px;
   @media screen and (max-width: 600px) {
-    width: 350px;
+    width: 300px;
   }
 `;
 
@@ -56,15 +54,21 @@ function About1() {
         <div className="about-text">
           <BigText>About</BigText>
           <p>
-            Hey there! I'm Kiriti Aryal. I am a Computer Science student at
-            Texas Tech University. I am 23 years old. I currently live in
-            Lubbock, Texas. I am originally from Nepal. I have been in the
-            States since 2017. I like to mix in with any team I am working with.
-            I believe work environment is an integral part of any organization
-            and I am very commited to do my part to maintain it.
+            I have enjoyed working and learning technology because it allows me
+            to leverage my technical and creative sides to solve interesting and
+            complex problems. I also love watching movies from all around the
+            world and believe art and music are an integral part of me and
+            reasons I get motivated. I thrive in diverse environments and
+            believe in the mindset that rainbows would not be so mesmerizing
+            with just one spectrum of color. I am always curious to learning new
+            things and eager to polish my skills. I have admiration for any
+            resource that is spent on me and I believe in giving back what I
+            can.
             <br />
             <br />
-            Also these are the languages I speak:
+            Fun fact - I have visited two-thirds of the states in the US and
+            would like to go on a solo Europe Backpacking trip before I am prone
+            to falling asleep in boats. Also I speak the following languages:
             <br />
             <br />
             <div className="languages">
@@ -97,14 +101,6 @@ function About1() {
               </Card>
             </div>
           </p>
-        </div>
-        <div className="about-img">
-          <a href={Resume} target="_blank" className="nohover">
-            <Container>
-              <img src={ResumeIcon} alt="ResumeIcon" height={10} width={20} />
-              <p>Resume</p>
-            </Container>
-          </a>
         </div>
       </section>
     </>
