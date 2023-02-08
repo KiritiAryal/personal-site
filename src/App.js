@@ -16,7 +16,6 @@ import WorkPage from "./components/WorkPage";
 
 import SoundBar from "./subComponents/SoundBar";
 import About from "./components/About";
-import { Helmet, HelmetProvider } from "react-helmet-async";
 
 function App() {
   const containerRef = useRef(null);
@@ -30,16 +29,6 @@ function App() {
 
   return (
     <>
-      <HelmetProvider>
-        <Helmet>
-          <title>Hire a Techie Red Raider | Kiriti Aryal - CS Major</title>
-          <meta
-            name="description"
-            content="Looking for a full-stack developer. Hire from a trusted University like Texas Tech and hire to diversify your workforce. We all like rainbows because they have more colors."
-          />
-        </Helmet>
-      </HelmetProvider>
-
       <GlobalStyle />
 
       <ThemeProvider theme={lightTheme}>
