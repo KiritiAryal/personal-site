@@ -18,7 +18,7 @@ export const Work = [
     tags: ["react", "redux-toolkit", "coding addict"],
 
     demo: "https://mobile-phones-cart.vercel.app/",
-    github: "https://github.com/codebucks27/devto-clone",
+    github: "https://github.com/KiritiAryal/redux-toolkit-cart",
   },
   {
     id: 3,
