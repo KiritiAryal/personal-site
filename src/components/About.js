@@ -58,11 +58,11 @@ function About1() {
             to leverage my technical and creative sides to solve interesting and
             complex problems. I thrive in diverse environments and believe in
             the mindset that rainbows would not be so mesmerizing with just one
-            spectrum of color. I am always curious to learning new things and
-            eager to polish my skills. I have admiration for any resource that
-            is spent on me and I believe in giving back what I can. I also love
-            watching movies from all around the world and believe art and music
-            are an integral part of me and reasons I get motivated.
+            color in the spectrum. I am always curious to learning new things
+            and eager to polish my skills. I have admiration for any resource
+            that is spent on me and I believe in giving back what I can. I also
+            love watching movies from all around the world and believe art and
+            music are an integral part of me and reasons I get motivated.
             <br />
             <br />
             Fun fact - I have visited two-thirds of the states in the US and
