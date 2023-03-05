@@ -35,7 +35,7 @@ export const Work = [
     id: 4,
     name: "Todo App",
     description:
-      "A simple todo app built using React which stores todos in local storage of your browser",
+      "A simple todo app built using React which stores todos in the local storage of your browser",
     tags: ["react", "localstorage", "TODO"],
 
     demo: "https://react-todo-rust-one.vercel.app/",
