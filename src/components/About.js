@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import Resume from "../assets/Images/KiritiAryalResume.pdf";
+import ResumeIcon from "../assets/Images/cv.png";
 
 import "./About.css";
 const Card = styled.div`
@@ -13,7 +15,7 @@ const Card = styled.div`
   gap: 20px;
   padding-left: 20px;
   @media screen and (max-width: 600px) {
-    width: 300px;
+    width: 350px;
   }
 `;
 
@@ -60,9 +62,12 @@ function About1() {
             the mindset that rainbows would not be so mesmerizing with just one
             color in the spectrum. I am always curious to learning new things
             and eager to polish my skills. I have admiration for any resource
-            that is spent on me and I believe in giving back what I can. I also
-            love watching movies from all around the world and believe art and
-            music are an integral part of me and reasons I get motivated.
+            that is spent on me and I believe in giving back what I can. I like
+            to mix in with any team I am working with. I believe work
+            environment is an integral part of any organization and I am very
+            commited to do my part to maintain it. I also love watching movies
+            from all around the world and believe art and music are an integral
+            part of me and reasons I get motivated.
             <br />
             <br />
             Fun fact - I have visited two-thirds of the states in the US and
@@ -100,6 +105,14 @@ function About1() {
               </Card>
             </div>
           </p>
+        </div>
+        <div className="about-img">
+          <a href={Resume} target="_blank" className="nohover">
+            <Container>
+              <img src={ResumeIcon} alt="ResumeIcon" height={10} width={20} />
+              <p>Resume</p>
+            </Container>
+          </a>
         </div>
       </section>
     </>
