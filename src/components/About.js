@@ -56,23 +56,20 @@ function About1() {
         <div className="about-text">
           <BigText>About</BigText>
           <p>
-            I have enjoyed working and learning technology because it allows me
-            to leverage my technical and creative sides to solve interesting and
+            I enjoy learning and working with technology because it allows me to
+            leverage my technical and creative sides to solve interesting and
             complex problems. I thrive in diverse environments and believe in
             the mindset that rainbows would not be so mesmerizing with just one
-            color in the spectrum. I am always curious to learning new things
-            and eager to polish my skills. I have admiration for any resource
-            that is spent on me and I believe in giving back what I can. I like
-            to mix in with any team I am working with. I believe work
+            color in the spectrum. I'm always eager to learn new things and
+            polish my skills. I am always thankful for any resource that is
+            spent on me and I would give back what I can. I believe work
             environment is an integral part of any organization and I am very
-            commited to do my part to maintain it. I also love watching movies
-            from all around the world and believe art and music are an integral
-            part of me and reasons I get motivated.
+            commited to do my part to maintain it.
             <br />
             <br />
-            Fun fact - I have visited two-thirds of the states in the US and
-            would like to go on a solo Europe Backpacking trip before I am prone
-            to falling asleep in boats. Also I speak the following languages:
+            As for fun facts, I've visited two-thirds of the US states, and my
+            next goal is to backpack through Europe solo before I become too old
+            for adventure. I also speak several languages, including:
             <br />
             <br />
             <div className="languages">
