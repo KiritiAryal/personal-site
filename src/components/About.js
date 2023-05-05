@@ -35,10 +35,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
-  @media screen and (max-width: 1024px) {
-    gap: 1rem;
-  }
+  gap: 1rem;
 `;
 const Text = styled.h1`
   width: 100%;
