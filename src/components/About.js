@@ -55,8 +55,8 @@ function About1() {
           <p>
             I enjoy learning and working with technology because it allows me to
             leverage my technical and creative sides to solve interesting and
-            complex problems. I thrive in diverse environments and believe in
-            the mindset that rainbows would not be so mesmerizing with just one
+            complex problems. I thrive in diverse environments as I hold the
+            mindset that rainbows would not be so mesmerizing with just one
             color in the spectrum. I'm always eager to learn new things and
             polish my skills. I am always thankful for any resource that is
             spent on me and I would give back what I can. I believe work
