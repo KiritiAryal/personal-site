@@ -8,7 +8,6 @@ import { lightTheme } from "./components/Themes";
 import GlobalStyle from "./globalStyles";
 import Loader from "./components/Loader";
 import ScrollTriggerProxy from "./components/ScrollTriggerProxy";
-
 import Main from "./components/Main";
 
 import WorkPage from "./components/WorkPage";
