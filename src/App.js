@@ -9,7 +9,6 @@ import GlobalStyle from "./globalStyles";
 import Loader from "./components/Loader";
 import ScrollTriggerProxy from "./components/ScrollTriggerProxy";
 
-//Components
 import Main from "./components/Main";
 
 import WorkPage from "./components/WorkPage";
@@ -55,13 +54,13 @@ function App() {
           containerRef={containerRef}
         >
           <AnimatePresence>{Loaded ? null : <Loader />}</AnimatePresence>
-          <main className="App" data-scroll-container ref={containerRef}>
+          <main className='App' data-scroll-container ref={containerRef}>
             <ScrollTriggerProxy />
             <AnimatePresence>
               {Loaded ? null : <Loader />}
-              <Main key="main" />
-              <About key="about" />
-              <WorkPage key="work" />
+              <Main key='main' />
+              <About key='about' />
+              <WorkPage key='work' />
             </AnimatePresence>
           </main>
         </LocomotiveScrollProvider>
