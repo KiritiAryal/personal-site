@@ -49,31 +49,48 @@ const Text = styled.h1`
 function About1() {
   return (
     <>
-      <section className="about" id="about">
-        <div className="about-text">
+      <section className='about' id='about'>
+        <div className='about-text'>
           <BigText>About</BigText>
           <p>
-            I enjoy learning and working with technology because it allows me to
-            leverage my technical and creative sides to solve interesting and
-            complex problems. I thrive in diverse environments as I hold the
-            mindset that rainbows would not be so mesmerizing with just one
-            color in the spectrum. I'm always eager to learn new things and
-            polish my skills. I am always thankful for any resource that is
-            spent on me and I would give back what I can. I believe work
-            environment is an integral part of any organization and I am very
-            commited to do my part to maintain it.
+            After taking a fantastic two-month break for some post-graduation
+            travel adventures, I'm now on the lookout for exciting full-time job
+            opportunities. In my downtime, you'll find me out in nature, hiking
+            and soaking up the great outdoors. I'm also a bit of a culture
+            enthusiast, always eager to dive into new experiences and learn from
+            different walks of life. Oh, and let's not forget my love for the
+            open road – nothing beats the thrill of a good motorcycle ride!
             <br />
             <br />
-            As for fun facts, I've visited two-thirds of the US states, and my
-            next goal is to backpack through Europe solo before I become too old
-            for adventure. I also speak several languages, including:
+            I'm not just about the fun stuff, though. I bring a ton of passion
+            to everything I do, always pushing myself to be the best version I
+            can be. Now, I'm super excited about the idea of bringing my skills
+            and unlimited potential for growth to your awesome company.
             <br />
             <br />
-            <div className="languages">
+            I'm drawn to technology because it's this incredible canvas where I
+            can blend my technical prowess with a splash of creativity to tackle
+            intriguing challenges. Diversity is my jam – just like a rainbow
+            loses its magic with one color, I thrive in varied environments.
+            Learning is my perpetual quest, and every resource invested in me is
+            met with gratitude and a commitment to give back. I see the work
+            environment as a crucial element, and I'm fully devoted to doing my
+            part in nurturing it within any organization.
+            <br />
+            <br />
+            Dropping some fun facts about me! Started from humble beginnings,
+            funded my own adventures, ticking off two-thirds of US states and 4
+            countries. Next up? Solo backpacking through Europe before my knees
+            and spine decide to retire!
+            <br />
+            Oh, and I'm fluent in a few languages:
+            <br />
+            <br />
+            <div className='languages'>
               <Card>
                 <img
-                  src="https://4.bp.blogspot.com/-xQiVfurjEqg/WzOeOJ4aTdI/AAAAAAAAol0/72y9ICam56shTYXRwaUL7vhqqbTDAM80ACLcBGAs/s1600/Flag_of_Nepal.gif"
-                  alt="Nepali Flag"
+                  src='https://4.bp.blogspot.com/-xQiVfurjEqg/WzOeOJ4aTdI/AAAAAAAAol0/72y9ICam56shTYXRwaUL7vhqqbTDAM80ACLcBGAs/s1600/Flag_of_Nepal.gif'
+                  alt='Nepali Flag'
                   height={40}
                   width={45}
                 />
@@ -81,8 +98,8 @@ function About1() {
               </Card>
               <Card>
                 <img
-                  src="https://1.bp.blogspot.com/-kP6bmmixhvg/YDbA3kZ-75I/AAAAAAAA4Os/YS5VBD0fGnMgMteNDso4OWSsD-alvMyhgCLcBGAsYHQ/s0/Flag_of_India.gif"
-                  alt="Indian Flag"
+                  src='https://1.bp.blogspot.com/-kP6bmmixhvg/YDbA3kZ-75I/AAAAAAAA4Os/YS5VBD0fGnMgMteNDso4OWSsD-alvMyhgCLcBGAsYHQ/s0/Flag_of_India.gif'
+                  alt='Indian Flag'
                   height={40}
                   width={45}
                 />
@@ -90,8 +107,8 @@ function About1() {
               </Card>
               <Card>
                 <img
-                  src="https://1.bp.blogspot.com/-YW-zCeJaST0/YEa1KIncAPI/AAAAAAAA5Fs/MN7ZqlSZZpMWG-BVCMkBK7ZlyPGm4wdkwCLcBGAsYHQ/s0/Flag_of_the_United_States.gif"
-                  alt="US Flag"
+                  src='https://1.bp.blogspot.com/-YW-zCeJaST0/YEa1KIncAPI/AAAAAAAA5Fs/MN7ZqlSZZpMWG-BVCMkBK7ZlyPGm4wdkwCLcBGAsYHQ/s0/Flag_of_the_United_States.gif'
+                  alt='US Flag'
                   height={40}
                   width={45}
                 />
@@ -100,10 +117,10 @@ function About1() {
             </div>
           </p>
         </div>
-        <div className="about-img">
-          <a href={Resume} target="_blank" className="nohover">
+        <div className='about-img'>
+          <a href={Resume} target='_blank' className='nohover'>
             <Container>
-              <img src={ResumeIcon} alt="ResumeIcon" height={10} width={20} />
+              <img src={ResumeIcon} alt='ResumeIcon' height={10} width={20} />
               <p>Resume</p>
             </Container>
           </a>

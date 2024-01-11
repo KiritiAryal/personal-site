@@ -3,7 +3,7 @@ export const Work = [
     id: 1,
     name: "Open Market Hub",
     description:
-      "A startup buisness idea for buying and selling products locally",
+      "A startup business idea for buying and selling products locally",
     tags: ["react", "typeScript", "spring-boot", "swaggerUI", "JWT"],
 
     demo: "https://openmarkethub.com/",

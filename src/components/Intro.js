@@ -105,15 +105,16 @@ const Intro = () => {
             }}
           />
           <h6>
-            I currently go to Texas Tech University in Lubbock, Texas. I
-            graduate on May, 2023. I love riding motorcycles and hiking. Feel
-            free to connect with me and check out my works
+            Hey there! Recent Texas Tech grad seeking thrilling full-time
+            opportunities in the world of Computer Science. From coding to the
+            great outdoors, I'm passionate about it all. Let's connect and
+            explore the exciting possibilities together! 🚀👩‍💻
             <p style={{ display: "inline" }}> &#x270C;</p>
           </h6>
         </Text>
       </SubBox>
       <SubBox>
-        <img className="pic" src={Me} alt="Profile Pic" />
+        <img className='pic' src={Me} alt='Profile Pic' />
       </SubBox>
     </Box>
   );
