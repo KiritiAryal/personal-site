@@ -8,6 +8,8 @@ const Container = styled.div`
   gap: 20px;
   left: 2rem;
   z-index: 3;
+  cursor: pointer;
+
   color: ${(props) =>
     props.color === "dark" ? DarkTheme.text : DarkTheme.body};
   &:hover {

@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
@@ -80,10 +79,10 @@ const Main = () => {
     <MainContainer>
       <DarkDiv />
       <Container>
-        <PowerButton theme="dark" />
+        <PowerButton theme='dark' />
         <h2>Hello</h2>
         <Intro />
-        <SocialIcons theme="dark" />
+        <SocialIcons theme='dark' />
         <BottomBar>
           <StyledTrademark>© Kiriti Aryal 2022</StyledTrademark>
         </BottomBar>

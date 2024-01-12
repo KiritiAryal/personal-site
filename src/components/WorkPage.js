@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { DarkTheme } from "./Themes";
 import { motion } from "framer-motion";
@@ -115,14 +115,14 @@ const WorkPage = () => {
 
   return (
     <ThemeProvider theme={DarkTheme}>
-      <Box ref={ref} id="work">
-        <ParticlesComponent theme="dark" />
+      <Box ref={ref} id='work'>
+        <ParticlesComponent theme='dark' />
         <Main data-scroll ref={Horizontalref}>
           {Work.map((d) => (
             <Card key={d.id} data={d} />
           ))}
         </Main>
-        <BigTitle text="My Projects" top="5%" left="3%" />
+        <BigTitle text='My Projects' top='5%' left='3%' />
       </Box>
     </ThemeProvider>
   );

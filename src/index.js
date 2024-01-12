@@ -13,11 +13,10 @@ root.render(
   <BrowserRouter>
     <HelmetProvider>
       <Helmet>
-        <title>Hire a Techie Red Raider | Kiriti Aryal - CS Undergrad</title>
-        <meta
-          name="description"
-          content="Looking for a full-stack developer. Hire from a trusted University like Texas Tech and diversify your workforce. We all like rainbows because they have more colors."
-        />
+        <title>
+          Hire recent graduate local to Dallas | Kiriti Aryal - CS Undergrad
+        </title>
+        <meta name='description' />
       </Helmet>
       <App />
     </HelmetProvider>

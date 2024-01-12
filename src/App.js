@@ -12,7 +12,6 @@ import Main from "./components/Main";
 
 import WorkPage from "./components/WorkPage";
 
-import SoundBar from "./subComponents/SoundBar";
 import About from "./components/About";
 
 function App() {
@@ -30,8 +29,6 @@ function App() {
       <GlobalStyle />
 
       <ThemeProvider theme={lightTheme}>
-        <SoundBar />
-
         <LocomotiveScrollProvider
           options={{
             smooth: true,
