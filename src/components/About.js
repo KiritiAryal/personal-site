@@ -39,7 +39,7 @@ const Text = styled.h1`
     width: 50%;
   }
 `;
-function About1() {
+function About() {
   return (
     <>
       <div className='about'>

@@ -52,16 +52,10 @@ const SubBox = styled.div`
     height: max-content;
 
     @media only screen and (max-width: 480px) {
-      display: none;
+      height: 400px;
+      margin-bottom: 90%;
     }
-    @media only screen and (min-width: 481px) and (max-width: 768px) {
-      height: 600px;
-    }
-
-    @media only screen and (min-width: 769px) and (max-width: 1024px) {
-      height: 600px;
-    }
-    @media only screen and (max-width: 1440px) {
+    @media only screen and (min-width: 481px) and (max-width: 1440px) {
       height: 600px;
     }
   }
