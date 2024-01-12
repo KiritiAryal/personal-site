@@ -78,6 +78,16 @@ function About1() {
             part in nurturing it within any organization.
             <br />
             <br />
+            One significant aspect of giving back has been my volunteer
+            experiences. I've dedicated my time to organizations like Feed My
+            Starving Children (FMSC), where I contributed to the noble cause of
+            providing meals to those in need, and Computers for the Blind
+            (CFTB), where I played a role in making technology accessible to
+            visually impaired individuals. These experiences have not only
+            enriched my understanding of community service but have also allowed
+            me to apply my technical skills in meaningful ways.
+            <br />
+            <br />
             Dropping some fun facts about me! Started from humble beginnings,
             funded my own adventures, ticking off two-thirds of US states and 4
             countries. Next up? Solo backpacking through Europe before my knees
