@@ -132,4 +132,4 @@ function About() {
   );
 }
 
-export default About1;
+export default About;
