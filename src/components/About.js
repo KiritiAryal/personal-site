@@ -72,7 +72,7 @@ function About1() {
           ride!
           <br />
           <br />
-          One significant aspect of giving back has been my volunteer
+          Recently one significant aspect of my life has been my volunteer
           experiences. I've dedicated my time to organizations like{" "}
           <b>Feed My Starving Children (FMSC)</b>, where I contributed to the
           noble cause of providing meals to hungry kids, and{" "}
