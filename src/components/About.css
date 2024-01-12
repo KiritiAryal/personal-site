@@ -26,8 +26,8 @@
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .about {
-    left: 5rem;
-    right: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
   .about p {
     font-size: 12px;
@@ -60,6 +60,7 @@
     height: 150px;
   }
 }
+
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .about {
     padding-left: 5rem;
@@ -76,5 +77,23 @@
   .resume img {
     width: 250px;
     height: 200px;
+  }
+  @media only screen and (min-width: 430px) {
+    .about {
+      left: 5rem;
+      right: 5rem;
+    }
+    .about p {
+      font-size: 12px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .resume img {
+      width: 130px;
+      height: 150px;
+    }
   }
 }

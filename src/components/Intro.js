@@ -109,7 +109,6 @@ const Intro = () => {
             opportunities in the world of Computer Science. From coding to the
             great outdoors, I'm passionate about it all. Let's connect and
             explore the exciting possibilities together! 🚀👩‍💻
-            <p style={{ display: "inline" }}> &#x270C;</p>
           </h6>
         </Text>
       </SubBox>
