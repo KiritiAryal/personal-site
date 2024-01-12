@@ -73,13 +73,14 @@ function About1() {
           <br />
           <br />
           One significant aspect of giving back has been my volunteer
-          experiences. I've dedicated my time to organizations like Feed My
-          Starving Children (FMSC), where I contributed to the noble cause of
-          providing meals to hungry kids, and Computers for the Blind (CFTB),
-          where I played a role in making technology accessible to visually
-          impaired individuals. These experiences have not only enriched my
-          understanding of community service but have also allowed me to apply
-          my technical skills in meaningful ways.
+          experiences. I've dedicated my time to organizations like{" "}
+          <b>Feed My Starving Children (FMSC)</b>, where I contributed to the
+          noble cause of providing meals to hungry kids, and{" "}
+          <b>Computers for the Blind (CFTB)</b>, where I played a role in making
+          technology accessible to visually impaired individuals. These
+          experiences have not only enriched my understanding of community
+          service but have also allowed me to apply my technical skills in
+          meaningful ways.
           <br />
           <br />
           Dropping some fun facts about me! Started from humble beginnings,
