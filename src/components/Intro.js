@@ -9,9 +9,8 @@ const Box = styled(motion.div)`
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-
   width: 65vw;
-  height: 55vh;
+  height: 5vh;
   display: flex;
   @media screen and (max-width: 600px) {
     top: 56%;
@@ -50,10 +49,20 @@ const SubBox = styled.div`
     left: 50%;
     transform: translate(-50%, 0%);
     width: 100%;
-    height: auto;
-    @media screen and (max-width: 600px) {
-      padding-bottom: 20px;
-      height: 400px;
+    height: max-content;
+
+    @media only screen and (max-width: 480px) {
+      display: none;
+    }
+    @media only screen and (min-width: 481px) and (max-width: 768px) {
+      height: 600px;
+    }
+
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+      height: 600px;
+    }
+    @media only screen and (max-width: 1440px) {
+      height: 600px;
     }
   }
 `;
@@ -95,7 +104,7 @@ const Intro = () => {
                 .pauseFor(500)
                 .deleteAll()
                 .start()
-                .typeString("...passionate Student")
+                .typeString("...passionate about Life")
                 .pauseFor(500)
                 .deleteAll()
                 .typeString("...looking for Full-Time Opportunities")

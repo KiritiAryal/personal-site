@@ -78,22 +78,4 @@
     width: 250px;
     height: 200px;
   }
-  @media only screen and (min-width: 430px) {
-    .about {
-      left: 5rem;
-      right: 5rem;
-    }
-    .about p {
-      font-size: 12px;
-    }
-    .container {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-    }
-    .resume img {
-      width: 130px;
-      height: 150px;
-    }
-  }
 }

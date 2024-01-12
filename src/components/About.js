@@ -27,7 +27,6 @@ const BigText = styled.h1`
   z-index: 0;
   @media screen and (max-width: 600px) {
     position: relative;
-    left: 3%;
   }
 `;
 
