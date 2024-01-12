@@ -1,109 +1,79 @@
 .about {
   background-color: white;
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-
-  gap: rem;
-  padding-left: 4rem;
-  position: relative;
+  padding-left: 16rem;
+  padding-right: 16rem;
 }
 
-.about-text {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-}
-.about-text p {
-  width: 690px;
-  color: black;
+.about p {
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 2rem;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7rem;
 }
 .languages {
   display: flex;
   gap: 1rem;
   flex-direction: column;
 }
-.about-img {
-  justify-self: center;
-  align-self: center;
-  width: max-content;
-}
-.about-img a:hover {
-  color: cornflowerblue;
-}
-
-.about-img img {
-  height: auto;
-  width: 350px;
-}
-.about-img p {
-  font-size: 28px;
-  font-weight: 600;
+.resume img {
+  height: 250px;
+  width: 300px;
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .about {
-    padding-left: 2rem;
+    left: 5rem;
+    right: 5rem;
   }
-  .about-text {
-    width: 200px;
-  }
-  .about-text p {
-    width: 180px;
+  .about p {
     font-size: 12px;
   }
-  .about-img {
-    justify-self: start;
-    align-self: flex-start;
-    margin-top: 250px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
-  .about-img img {
+  .resume img {
     width: 130px;
     height: 150px;
-  }
-  .about-img p {
-    font-size: 16px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .about {
-    padding-left: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
-  .about-text {
-    width: 200px;
-  }
-  .about-text p {
-    width: 250px;
+  .about p {
     font-size: 12px;
   }
-  .about-img {
-    justify-self: start;
-    align-self: flex-start;
-    margin-top: 250px;
-    margin-left: 60px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
-  .about-img img {
+  .resume img {
     width: 150px;
     height: 150px;
   }
-  .about-img p {
-    font-size: 16px;
-  }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .about-text p {
-    width: 350px;
+  .about {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .about p {
     font-size: 12px;
   }
-  .about-img {
-    justify-self: start;
-    align-self: flex-start;
-    margin-top: 200px;
-    margin-left: 10px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
-  .about-img img {
+  .resume img {
     width: 250px;
     height: 200px;
   }
